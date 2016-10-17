@@ -1,0 +1,21 @@
+<ion-view view-title="Podzimní navigátor">
+  <ion-content>
+    <div class="list">
+      <label class="item item-input">
+        <span class="input-label">Position</span>
+        <input type="text" placeholder="Position" ng-model="position" ng-change="savePosition(position)" />
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Password</span>
+        <input type="text" placeholder="Password" ng-model="password">
+      </label>
+      <button class="button button-full button-positive" ng-click="position=calc(position, password)">
+        Calculate next position
+      </button>
+    </div>
+    <div class="padding">
+      Písmeno udává číslo řádku, číslo je číslo sloupce.
+    </div>
+  </div>
+  </ion-content>
+</ion-view>
